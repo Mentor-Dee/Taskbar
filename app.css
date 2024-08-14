@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.taskbar {
+    width: 1920px;
+    height: 65px;
+    background-color: #dddcdc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+#edge {
+    width: 40px;
+    height: 40px;
+}
+
+.notify {
+    width: 40px;
+    height: 40px;
+}
+
+i {
+    font-size: 40px;
+
+}
+
+.centers {
+    display: flex;
+    position: absolute;
+    /* background-color: black;
+    flex-flow: row wrap;
+    width: 500px;
+    height: 50px; */
+}
+
+.centers i {
+    margin: 5px;
+    padding: 10px;
+}
+
+.centers i:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 2px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.small-icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.small-icons i {
+    margin: 5px;
+}
+
+.start {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.start i {
+    margin: 5px 10px;
+}
+
+.in1 {
+    position: absolute;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.in2 {
+    position: absolute;
+    animation-name: fade;
+    animation-duration: 15s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.in3 {
+    position: absolute;
+    animation-name: fade;
+    animation-duration: 20s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.in4 {
+    position: absolute;
+    animation-name: fade;
+    animation-duration: 30s;
+} 
+
+@keyframes fade {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
